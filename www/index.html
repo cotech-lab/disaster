@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSE30u0dBGDvP15h8Wp45Gabl0huLwiI&sensor=false" type="text/javascript"></script>
+    <script>
+        ons.bootstrap();
+        ons.disableAutoStatusBarFill(); // (Monaca enables StatusBar plugin by default)
+    </script>
+    <script src="js/ncmb-latest.min.js"></script>
+    <script src="js/app.js">
+        // APIキーの設定とSDK初期化
+        var ncmb = new NCMB("13a9bb7225f0fb61bf255af50dd17c33eb6c4f79b9b4569a96b41602d8a85dc4", "a17cca33a9df771372b0891b9c09c0dfa32a6c6e105a65321c172c0ed3e7e90f");
+    </script>
+    <!--<script src="components/ncmb/ncmb.min.js"></script> -->
+</head>
+
+<body>
+<p id="ResultMessage">
+  このQRコードは万が一の時保証できません。
+</p>
+    <!--<div id="qrcode" align="center"></div>-->
+    <!--<script type="text/javascript" src="js/jquery.qrcode.min.js"></script>-->
+    <!-- <script> ->
+//        jQuery('#qrcode')
+            .qrcode("http://google.com/"); // QRコードのリンク先
+    <!--</script> -->
+    <ons-navigator title="Navigator" var="myNavigator" page="page1.html"> </ons-navigator>
+</body>
+<!--<p><a href="https://github.com/amanuel/JS-HTML5-QRCode-Generator" onmouseover="updateQRCode(this.href)">Project Homepage</a></p>
+<p><a href="http://ticklespace.com" onmouseover="updateQRCode(this.href)">TickleSpace</a></p>
+-->
+
+</html>

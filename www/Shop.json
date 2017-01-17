@@ -1,0 +1,153 @@
+{
+    "results": [
+    {
+        "acl":
+        {
+            "*":
+            {
+                "read": true,
+                "write": true
+            }
+        },
+        "capacity": 12,
+        "createDate":
+        {
+            "__type": "Date",
+            "iso": "2015-07-29T02:43:20.795Z"
+        },
+        "geolocation":
+        {
+            "__type": "GeoPoint",
+            "longitude": 139.687384,
+            "latitude": 35.695737
+        },
+        "image": "shop1.JPG",
+        "name": "カレーショップ",
+        "updateDate":
+        {
+            "__type": "Date",
+            "iso": "2015-09-02T09:26:54.026Z"
+        },
+        "objectId": "Ry0PXCHQtAznnxiA"
+    },
+    {
+        "acl":
+        {
+            "*":
+            {
+                "read": true,
+                "write": true
+            }
+        },
+        "capacity": 5,
+        "createDate":
+        {
+            "__type": "Date",
+            "iso": "2015-07-29T02:42:04.540Z"
+        },
+        "geolocation":
+        {
+            "__type": "GeoPoint",
+            "longitude": 139.699566,
+            "latitude": 35.692498
+        },
+        "image": "shop2.JPG",
+        "name": "マクドナルド",
+        "updateDate":
+        {
+            "__type": "Date",
+            "iso": "2015-09-02T09:27:12.545Z"
+        },
+        "objectId": "ZRez7OUwwnXLy6PV"
+    },
+    {
+        "acl":
+        {
+            "*":
+            {
+                "read": true,
+                "write": true
+            }
+        },
+        "capacity": 7,
+        "createDate":
+        {
+            "__type": "Date",
+            "iso": "2015-07-29T02:41:57.692Z"
+        },
+        "geolocation":
+        {
+            "__type": "GeoPoint",
+            "longitude": 139.695462,
+            "latitude": 35.687407
+        },
+        "image": "shop3.JPG",
+        "name": "お寿司店",
+        "updateDate":
+        {
+            "__type": "Date",
+            "iso": "2015-09-02T09:27:16.367Z"
+        },
+        "objectId": "NgYCaeyK5AmfHzHb"
+    },
+    {
+        "acl":
+        {
+            "*":
+            {
+                "read": true,
+                "write": true
+            }
+        },
+        "capacity": 8,
+        "createDate":
+        {
+            "__type": "Date",
+            "iso": "2015-07-29T02:41:38.220Z"
+        },
+        "geolocation":
+        {
+            "__type": "GeoPoint",
+            "longitude": 139.688143,
+            "latitude": 35.692376
+        },
+        "image": "shop4.JPG",
+        "name": "すき焼き",
+        "updateDate":
+        {
+            "__type": "Date",
+            "iso": "2015-09-02T09:27:34.245Z"
+        },
+        "objectId": "jkPElvzUWGr4RYWI"
+    },
+    {
+        "acl":
+        {
+            "*":
+            {
+                "read": true,
+                "write": true
+            }
+        },
+        "capacity": 10,
+        "createDate":
+        {
+            "__type": "Date",
+            "iso": "2015-07-29T02:41:03.900Z"
+        },
+        "geolocation":
+        {
+            "__type": "GeoPoint",
+            "longitude": 139.6892609,
+            "latitude": 35.6959486
+        },
+        "image": "shop5.JPG",
+        "name": "ラーメン屋",
+        "updateDate":
+        {
+            "__type": "Date",
+            "iso": "2015-09-02T09:27:41.180Z"
+        },
+        "objectId": "PNg3LhiJDE2X1F02"
+    }]
+}
