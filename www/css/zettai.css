@@ -1,0 +1,19 @@
+/* This is a CSS file */
+
+.zettai {
+    position: absolute;
+    top: 90px;
+    left: 5px;
+}
+
+.zettai1 {
+    position: absolute;
+    top: 90px;
+    left: 110px;
+}
+
+.zettai2 {
+    position: absolute;
+    top: 90px;
+    left: 215px;
+}

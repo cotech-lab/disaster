@@ -1,18 +1,21 @@
+<link rel="stylesheet" href="css/style.css">
 <ons-page>
     <ons-toolbar>
-        <div class="center">Navigator</div>
+        <div class="center">Disaster Preparedness for Nonoichi</div>
     </ons-toolbar>
-
-    <div style="text-align: center">
-        <br>
-        <ons-button
-            onclick="find()">
-            避難所一覧
-        </ons-button>
-        <br/>
-       
-        <div id="map_canvas" style="width:100%; height:400px;"></div>
-
+    <div style="text-align: center"> <br>
+        <ons-button onclick="find()"> Evacation Sites </ons-button>
+        </div>
+         <div style="text-align: center"> <br>
+          <ons-button onclick = "myNavigator.pushPage('Guide.html')" class = "Disaster" style="width: 70%; height: 18%;">Disaster Preparedness Guide</ons-button>
+          </div>
+           <div style="text-align: center"> <br>
+        <ons-button onclick = "myNavigator.pushPage('List.html')" class = "Items" style="width: 70%; height: 18%;">Necessary items</ons-button>
+        </div>
+         <div style="text-align: center"> <br>
+        <ons-button onclick = "myNavigator.pushPage('AboutApp.html')" class = "Appli" style="width: 70%; height: 18%;">About the application</ons-button>
+        <div id="map_canvas" style="width:100%; height:300px;"></div>
+      
     </div>
-
+        
 </ons-page>

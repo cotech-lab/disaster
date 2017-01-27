@@ -1,13 +1,12 @@
 // This is a JavaScript file
 var appKey = "13a9bb7225f0fb61bf255af50dd17c33eb6c4f79b9b4569a96b41602d8a85dc4";
 var clientKey = "a17cca33a9df771372b0891b9c09c0dfa32a6c6e105a65321c172c0ed3e7e90f";
+var applicationID = "QHiUQm7q0pedkRKI";
+
 $(function()
 {
     //起動時にmobile backend APIキーを設定
-    $.getJSON("setting.json", function(data)
-    {
-        
-    });
+    $.getJSON("setting.json", function(data) {});
 });
 var ncmb = new NCMB.initialize(appKey, clientKey);
 //位置情報取得に成功した場合のコールバック
@@ -23,6 +22,8 @@ var onError = function(error)
 {
     console.log("現在位置を取得できませんでした");
 };
+
+
 //位置情報取得時に設定するオプション
 var option = {
     timeout: 60000 //タイムアウト値(ミリ秒)
@@ -71,7 +72,7 @@ function search(current)
             {
                 var point = points[i];
                 var detail = "";
-                console.log("<p>店名：" + point.get("name") + "</p>");
+                console.log("<p>人：" + point.get("name") + "</p>");
                 //位置情報オブジェクトを作成            
                 var location = point.get("geo");
                 var pointName = point.get("name");
