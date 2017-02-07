@@ -3,13 +3,19 @@ var appKey = "13a9bb7225f0fb61bf255af50dd17c33eb6c4f79b9b4569a96b41602d8a85dc4";
 var clientKey = "a17cca33a9df771372b0891b9c09c0dfa32a6c6e105a65321c172c0ed3e7e90f";
 var applicationID = "QHiUQm7q0pedkRKI";
 
+var map;
+var marker;
+
+
 $(function()
 {
     //起動時にmobile backend APIキーを設定
-    $.getJSON("setting.json", function(data) {});
+    $.getJSON("spot.json", function(data) {});
 });
 var ncmb = new NCMB.initialize(appKey, clientKey);
 //位置情報取得に成功した場合のコールバック
+
+
 var onSuccess = function(position)
 {
     var current = new CurrentPoint();
@@ -34,6 +40,8 @@ function find()
     CurrentPoint.distance = 100; //検索距離を5kmに設定
     navigator.geolocation.getCurrentPosition(onSuccess, onError, option);
 }
+
+
 //現在地を保持するクラスを作成
 function CurrentPoint()
 {
@@ -62,7 +70,7 @@ function search(current)
                 //中心地設定
                 center: new google.maps.LatLng(current.geopoint.latitude, current.geopoint.longitude),
                 //ズーム設定
-                zoom: 15,
+                zoom: 20,
                 //地図のタイプを指定
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
@@ -78,7 +86,7 @@ function search(current)
                 var pointName = point.get("name");
                 detail += "<h3>" + pointName + "</h3>";
                 var myLatlng = new google.maps.LatLng(location.latitude, location.longitude);
-                detail += '<button onclick = "showSpot(\'' + point.objectId + '\');">detail</button>';
+                //detail += '<button onclick = "showSpot(\'' + point.objectId + '\');">detail</button>';
                 //店舗名、位置情報、Google mapオブジェクトを指定してマーカー作成メソッドを呼び出し
                 markToMap(detail, myLatlng, map);
             }
